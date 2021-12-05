@@ -5,7 +5,7 @@
 // Runtime Environment's members available in the global scope.
 import hre from "hardhat";
 // eslint-disable-next-line node/no-missing-import
-import SharedWallet from "./exercices/SharedWallet";
+import TokenSwap from "./exercices/TokenSwap";
 
 const ethers = hre.ethers;
 
@@ -18,12 +18,19 @@ async function main() {
   // await hre.run("compile");
   //
   // const provider = new ethers.providers.JsonRpcProvider();
-  // const SharedWallet = await ethers.getContractFactory("SharedWallet");
-  // const sharedWallet = await SharedWallet.deploy();
-  // await sharedWallet.deployed();
 
-  const sharedWallet = new SharedWallet();
-  await sharedWallet.test();
+  // const person0 = provider.getSigner(0);
+  // const person1 = provider.getSigner(1);
+  // const person2 = provider.getSigner(2);
+
+  let ts = new TokenSwap();
+  ts.test();
+
+
+  // const MyTestToken = await ethers.getContractFactory("MyTestToken", person0);
+  // const mtt = await MyTestToken.deploy("MyTestToken", "MTT");
+  // await mtt.deployed();
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
