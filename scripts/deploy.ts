@@ -5,7 +5,7 @@
 // Runtime Environment's members available in the global scope.
 import hre from "hardhat";
 // eslint-disable-next-line node/no-missing-import
-import TokenSwap from "./exercices/TokenSwap";
+// import EtherGame from "./exercices/EtherGame";
 
 const ethers = hre.ethers;
 
@@ -18,19 +18,15 @@ async function main() {
   // await hre.run("compile");
   //
   // const provider = new ethers.providers.JsonRpcProvider();
-
   // const person0 = provider.getSigner(0);
   // const person1 = provider.getSigner(1);
   // const person2 = provider.getSigner(2);
 
-  let ts = new TokenSwap();
-  ts.test();
+  // const EtherGame = await ethers.getContractFactory("EtherGame");
+  // const eg = await EtherGame.deploy();
+  // await eg.deployed();
 
-
-  // const MyTestToken = await ethers.getContractFactory("MyTestToken", person0);
-  // const mtt = await MyTestToken.deploy("MyTestToken", "MTT");
-  // await mtt.deployed();
-
+  
 }
 
 // We recommend this pattern to be able to use async/await everywhere
