@@ -3,6 +3,7 @@
 //
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
+import { util } from "chai";
 import hre from "hardhat";
 // eslint-disable-next-line node/no-missing-import
 // import EtherGame from "./exercices/EtherGame";
@@ -22,9 +23,9 @@ async function main() {
   // const person1 = provider.getSigner(1);
   // const person2 = provider.getSigner(2);
 
-  // const EtherGame = await ethers.getContractFactory("EtherGame");
-  // const eg = await EtherGame.deploy();
-  // await eg.deployed();
+  // const DelegateContract = await ethers.getContractFactory("DelegateContract");
+  // const dc = await DelegateContract.deploy();
+  // await dc.deployed();
 
   
 }
